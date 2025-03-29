@@ -17,9 +17,5 @@
 - **Фреймворки**: Django, React,
 - **Базы данных**: PostgreSQL, SQLite
 
-## 📫 Связь со мной
-
+## Связь
 - Telegram: [@rmnvin](https://t.me/rmvin)
-- Email: [romanovinno@gmail.com](mailto:romanovinno@gmail.com)
-- GitHub: [github.com/innoky](https://github.com/innoky)
-
