@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="780" viewBox="0 0 780 780" font-family="ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="13.5">
+  <defs>
+    <style>
+      .bg     { fill: #1a1b26; }
+      .panel  { fill: #1f2335; stroke: #292e42; stroke-width: 1; }
+      .dot    { stroke-width: 0; }
+      .com    { fill: #565f89; font-style: italic; }
+      .key    { fill: #bb9af7; }
+      .dir    { fill: #f7768e; }
+      .lbl    { fill: #7aa2f7; }
+      .str    { fill: #9ece6a; }
+      .num    { fill: #ff9e64; }
+      .txt    { fill: #c0caf5; }
+      .reg    { fill: #2ac3de; }
+    </style>
+  </defs>
+
+  <!-- panel chrome -->
+  <rect class="bg" x="0" y="0" width="780" height="780" rx="14"/>
+  <rect class="panel" x="0" y="0" width="780" height="38" rx="14"/>
+  <rect class="panel" x="0" y="22" width="780" height="16"/>
+  <circle class="dot" cx="20" cy="19" r="6" fill="#f7768e"/>
+  <circle class="dot" cx="40" cy="19" r="6" fill="#e0af68"/>
+  <circle class="dot" cx="60" cy="19" r="6" fill="#9ece6a"/>
+  <text class="com" x="390" y="24" text-anchor="middle">innoky.asm</text>
+
+  <!-- code body -->
+  <g transform="translate(24 62)">
+    <text y="0">
+      <tspan class="com">;══════════════════════════════════════════════════════════════════════════</tspan>
+    </text>
+    <text y="20">
+      <tspan class="com">;  innoky.asm — programmer profile, x86_64 / Linux</tspan>
+    </text>
+    <text y="40">
+      <tspan class="com">;  build: nasm -f elf64 innoky.asm &amp;&amp; ld -o innoky innoky.o</tspan>
+    </text>
+    <text y="60">
+      <tspan class="com">;══════════════════════════════════════════════════════════════════════════</tspan>
+    </text>
+
+    <text y="100">
+      <tspan class="dir">BITS</tspan><tspan class="txt">  </tspan><tspan class="num">64</tspan>
+    </text>
+    <text y="120">
+      <tspan class="dir">GLOBAL</tspan><tspan class="txt"> </tspan><tspan class="lbl">_start</tspan>
+    </text>
+
+    <text y="160">
+      <tspan class="dir">section</tspan><tspan class="txt"> </tspan><tspan class="key">.data</tspan>
+    </text>
+    <text y="180">
+      <tspan class="txt">    </tspan><tspan class="lbl">name       </tspan> <tspan class="key">db</tspan> <tspan class="str">"Innokenty Romanov"</tspan><tspan class="txt">, </tspan><tspan class="num">0</tspan>
+    </text>
+    <text y="200">
+      <tspan class="txt">    </tspan><tspan class="lbl">university </tspan> <tspan class="key">db</tspan> <tspan class="str">"НИЯУ МИФИ — программная инженерия"</tspan><tspan class="txt">, </tspan><tspan class="num">0</tspan>
+    </text>
+    <text y="220">
+      <tspan class="txt">    </tspan><tspan class="lbl">location   </tspan> <tspan class="key">db</tspan> <tspan class="str">"Moscow, RU"</tspan><tspan class="txt">, </tspan><tspan class="num">0</tspan>
+    </text>
+    <text y="240">
+      <tspan class="txt">    </tspan><tspan class="lbl">motto      </tspan> <tspan class="key">db</tspan> <tspan class="str">"I'm building abstractions."</tspan><tspan class="txt">, </tspan><tspan class="num">0</tspan>
+    </text>
+
+    <text y="270">
+      <tspan class="txt">    </tspan><tspan class="com">; ── stack ──────────────────────────────────────────────</tspan>
+    </text>
+    <text y="290">
+      <tspan class="txt">    </tspan><tspan class="lbl">languages  </tspan> <tspan class="key">db</tspan> <tspan class="str">"C++"</tspan><tspan class="txt">, </tspan><tspan class="str">"C"</tspan><tspan class="txt">, </tspan><tspan class="str">"Rust"</tspan><tspan class="txt">, </tspan><tspan class="str">"Python"</tspan><tspan class="txt">, </tspan><tspan class="str">"asm"</tspan>
+    </text>
+    <text y="310">
+      <tspan class="txt">    </tspan><tspan class="lbl">backend    </tspan> <tspan class="key">db</tspan> <tspan class="str">"Django"</tspan><tspan class="txt">, </tspan><tspan class="str">"FastAPI"</tspan><tspan class="txt">, </tspan><tspan class="str">"Aiogram"</tspan>
+    </text>
+    <text y="330">
+      <tspan class="txt">    </tspan><tspan class="lbl">frontend   </tspan> <tspan class="key">db</tspan> <tspan class="str">"React"</tspan><tspan class="txt">, </tspan><tspan class="str">"TypeScript"</tspan>
+    </text>
+    <text y="350">
+      <tspan class="txt">    </tspan><tspan class="lbl">storage    </tspan> <tspan class="key">db</tspan> <tspan class="str">"PostgreSQL"</tspan><tspan class="txt">, </tspan><tspan class="str">"Redis"</tspan>
+    </text>
+    <text y="370">
+      <tspan class="txt">    </tspan><tspan class="lbl">runtime    </tspan> <tspan class="key">db</tspan> <tspan class="str">"Linux"</tspan><tspan class="txt">, </tspan><tspan class="str">"Docker"</tspan><tspan class="txt">, </tspan><tspan class="str">"Vulkan"</tspan>
+    </text>
+    <text y="390">
+      <tspan class="txt">    </tspan><tspan class="lbl">devops     </tspan> <tspan class="key">db</tspan> <tspan class="str">"Git"</tspan><tspan class="txt">, </tspan><tspan class="str">"GitHub Actions"</tspan><tspan class="txt">, </tspan><tspan class="str">"systemd"</tspan>
+    </text>
+
+    <text y="430">
+      <tspan class="dir">section</tspan><tspan class="txt"> </tspan><tspan class="key">.bss</tspan>
+    </text>
+    <text y="450">
+      <tspan class="txt">    </tspan><tspan class="lbl">next_year  </tspan> <tspan class="key">resq</tspan> <tspan class="num">1</tspan><tspan class="txt">     </tspan><tspan class="com">; ещё не аллоцировано</tspan>
+    </text>
+    <text y="470">
+      <tspan class="txt">    </tspan><tspan class="lbl">side_quests</tspan> <tspan class="key">resq</tspan> <tspan class="num">64</tspan><tspan class="txt">    </tspan><tspan class="com">; место под ad-hoc проекты</tspan>
+    </text>
+
+    <text y="510">
+      <tspan class="dir">section</tspan><tspan class="txt"> </tspan><tspan class="key">.text</tspan>
+    </text>
+
+    <text y="540">
+      <tspan class="lbl">interests</tspan><tspan class="txt">:</tspan>
+    </text>
+    <text y="560">
+      <tspan class="txt">    </tspan><tspan class="lbl">.systems    </tspan><tspan class="key">dq</tspan> <tspan class="str">"ADTs, lock-free, smart-ptrs, lazy seqs"</tspan>
+    </text>
+    <text y="580">
+      <tspan class="txt">    </tspan><tspan class="lbl">.networking </tspan><tspan class="key">dq</tspan> <tspan class="str">"tunnels, p2p, distributed storage"</tspan>
+    </text>
+    <text y="600">
+      <tspan class="txt">    </tspan><tspan class="lbl">.graphics   </tspan><tspan class="key">dq</tspan> <tspan class="str">"Vulkan, browser engines"</tspan>
+    </text>
+    <text y="620">
+      <tspan class="txt">    </tspan><tspan class="lbl">.crypto     </tspan><tspan class="key">dq</tspan> <tspan class="str">"TLS-camo, AEAD framing, REALITY"</tspan>
+    </text>
+    <text y="640">
+      <tspan class="txt">    </tspan><tspan class="key">ret</tspan>
+    </text>
+
+    <text y="680">
+      <tspan class="lbl">_start</tspan><tspan class="txt">:</tspan>
+    </text>
+    <text y="700">
+      <tspan class="txt">    </tspan><tspan class="key">call</tspan><tspan class="txt">    </tspan><tspan class="lbl">learn</tspan><tspan class="txt">         </tspan><tspan class="com">; всегда крутится в фоне</tspan>
+    </text>
+    <text y="720">
+      <tspan class="txt">    </tspan><tspan class="key">call</tspan><tspan class="txt">    </tspan><tspan class="lbl">abstract</tspan><tspan class="txt">      </tspan><tspan class="com">; main loop</tspan>
+    </text>
+  </g>
+</svg>

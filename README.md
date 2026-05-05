@@ -6,55 +6,9 @@
 
 </div>
 
-```asm
-;══════════════════════════════════════════════════════════════════════════
-;  innoky.asm — programmer profile, x86_64 / Linux
-;  build:  nasm -f elf64 innoky.asm && ld -o innoky innoky.o
-;══════════════════════════════════════════════════════════════════════════
-
-BITS 64
-GLOBAL _start
-
-section .data
-    name        db "Innokenty Romanov", 0
-    university  db "НИЯУ МИФИ — программная инженерия", 0
-    location    db "Moscow, RU", 0
-    motto       db "I'm building abstractions.", 0
-
-    ; ── Stack — что использую сейчас ─────────────────────────────────────
-    languages   db "C++ (main)", 0, "C", 0, "Rust", 0, \
-                   "Python", 0, "JavaScript / TypeScript", 0, \
-                   "a bit of assembler", 0
-    backend     db "Django", 0, "FastAPI", 0, "Aiogram", 0
-    frontend    db "ReactJS", 0
-    storage     db "PostgreSQL", 0, "Redis", 0
-    runtime     db "Linux", 0, "Docker", 0, "Vulkan", 0
-    devops      db "Git", 0, "GitHub Actions", 0, "systemd", 0
-
-section .bss
-    next_year   resq 1     ; ещё не аллоцировано
-    side_quests resq 64    ; место под ad-hoc проекты
-
-section .text
-;──────────────────────────────────────────────────────────────────────────
-; Основные интересы — низкоуровневые системы и абстракции над ними.
-;──────────────────────────────────────────────────────────────────────────
-
-interests:
-    .systems     dq "ADTs, lock-free, smart-ptrs, lazy seqs"
-    .networking  dq "tunnels, p2p, distributed storage"
-    .graphics    dq "Vulkan, browser engines"
-    .crypto      dq "TLS-camo, AEAD framing, REALITY"
-    ret
-
-;──────────────────────────────────────────────────────────────────────────
-; Точка входа.
-;──────────────────────────────────────────────────────────────────────────
-_start:
-    call    learn         ; всегда крутится в фоне
-    call    abstract      ; main loop
-    jmp     _start
-```
+<div align="center">
+  <img src="./assets/asm.svg" alt="innoky.asm — programmer profile, x86_64 / Linux" width="780"/>
+</div>
 
 <br/>
 
