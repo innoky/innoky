@@ -7,24 +7,7 @@
 </div>
 
 <div align="center">
-  <img src="./assets/asm.svg" alt="innoky.asm — programmer profile, x86_64 / Linux" width="780"/>
-</div>
-
-<br/>
-
-<div align="center">
-
-## Stats
-
-<a href="https://github.com/innoky">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=innoky&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=innoky&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
-</a>
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=innoky&theme=tokyonight&hide_border=true" height="180"/>
-
+  <img src="./assets/profile.svg" alt="innoky — programmer profile, x86_64 / Linux" width="780"/>
 </div>
 
 <br/>
